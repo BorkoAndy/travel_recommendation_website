@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelBloom - Travel Recommendations</title>
+    <!-- Font Awesome for the social media icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+
+    <!-- ========== Navbar ========== -->
+    <nav class="navbar">
+        <a class="brand" href="travel_recommendation.html">
+            <svg class="logo" viewBox="0 0 40 40" aria-hidden="true">
+                <rect x="1" y="1" width="38" height="38" rx="4" fill="#fff"/>
+                <path d="M8 28 L16 14 L22 22 L26 17 L32 28 Z" fill="#12323d"/>
+                <circle cx="29" cy="11" r="3" fill="#12323d"/>
+            </svg>
+            <span class="brand-name">TravelBloom</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="travel_recommendation.html">Home</a></li>
+            <li><a href="about_us.html">About Us</a></li>
+            <li><a href="contact_us.html">Contact Us</a></li>
+        </ul>
+
+        <form class="search-bar" id="searchForm" onsubmit="return false;">
+            <input type="text" id="searchInput" placeholder="Enter a destination or keyword" aria-label="Search destinations">
+            <span class="search-icon" aria-hidden="true">&#128269;</span>
+            <button type="submit" id="btnSearch" class="btn">Search</button>
+            <button type="reset" id="btnClear" class="btn">Clear</button>
+        </form>
+    </nav>
+
+    <!-- ========== Home section ========== -->
+    <header class="hero" id="home">
+
+        <!-- Social media links -->
+        <ul class="social-links">
+            <li><a href="https://twitter.com" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a></li>
+            <li><a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube"></i></a></li>
+        </ul>
+
+        <!-- Headline, introduction and call to action -->
+        <div class="hero-content">
+            <h1>Explore Dream Destination</h1>
+            <p>
+                TravelBloom helps you discover the world's most inspiring places.
+                Search for beaches, temples or entire countries and instantly see
+                recommendations with photos and descriptions. Dive into local
+                cultures, traditions and landmarks, and start planning a trip
+                that goes beyond the usual tourist trail.
+            </p>
+            <a href="#" class="book-btn">Book Now</a>
+        </div>
+        <!-- Search results appear here -->
+        <div class="results" id="results" hidden></div>
+    </header>
+
+    <script src="travel_recommendation.js"></script>
+</body>
+</html>

@@ -1,0 +1,400 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 30px;
+    background-color: #12323d;
+    color: #fff;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    width: 36px;
+    height: 36px;
+}
+
+.brand-name {
+    font-size: 22px;
+    font-style: italic;
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- Search bar ---------- */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 10px 6px 16px;
+    background-color: #fff;
+    border-radius: 25px;
+}
+
+.search-bar input {
+    width: 220px;
+    border: none;
+    outline: none;
+    font-size: 12px;
+    background: transparent;
+}
+
+.search-icon {
+    font-size: 12px;
+    color: #12323d;
+}
+
+.btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 14px;
+    background-color: #12877f;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0d6862;
+}
+
+/* ---------- Hero / Home section ---------- */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: calc(100vh - 56px);
+    padding: 40px 30px 40px 90px;
+    color: #fff;
+    /* Put your own photo at images/hero.jpg; the gradient is the fallback */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+        url("images/hero.jpg") center / cover no-repeat,
+        linear-gradient(135deg, #1b6a8a, #12323d);
+}
+
+/* Social icons: vertical column on the left edge */
+.social-links {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 0;
+    padding: 18px 20px;
+    list-style: none;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #12c4b8;
+}
+
+/* Headline, text, button */
+.hero-content {
+    max-width: 520px;
+}
+
+.hero-content h1 {
+    margin: 0 0 16px;
+    font-size: 48px;
+    line-height: 1.1;
+    text-transform: uppercase;
+}
+
+.hero-content p {
+    margin: 0 0 24px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.book-btn {
+    display: inline-block;
+    padding: 10px 18px;
+    background-color: #0b4f4a;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.book-btn:hover {
+    background-color: #12877f;
+}
+
+/* ---------- About Us page ---------- */
+.about-page {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 30px 60px;
+    color: #222;
+}
+
+.about-company h1,
+.team h2 {
+    color: #12323d;
+}
+
+.about-company h1 {
+    margin-top: 0;
+    font-size: 38px;
+}
+
+.about-company p {
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+.team {
+    margin-top: 50px;
+}
+
+.team h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: 24px;
+}
+
+.member {
+    padding: 24px 16px;
+    text-align: center;
+    background-color: #f1f6f7;
+    border-radius: 8px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 14px;
+    border-radius: 50%;
+    background-color: #12877f;
+    color: #fff;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.member h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    color: #12323d;
+}
+
+.role {
+    margin: 0;
+    font-size: 14px;
+    color: #555;
+}
+
+/* ---------- Contact Us page ---------- */
+.contact-page {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 40px 30px 60px;
+    color: #222;
+}
+
+.contact-page h1 {
+    margin-top: 0;
+    font-size: 38px;
+    color: #12323d;
+}
+
+.contact-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contact-form label {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #12323d;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b8c7cb;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #12877f;
+    border-color: #12877f;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    align-self: flex-start;
+    margin-top: 16px;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 4px;
+    background-color: #12877f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #0d6862;
+}
+
+.form-status {
+    min-height: 20px;
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #0d6862;
+}
+
+/* ---------- Search results ---------- */
+.results {
+    position: absolute;
+    top: 20px;
+    left: 90px;
+    right: 30px;
+    max-height: calc(100% - 40px);
+    overflow-y: auto;
+    display: grid;
+    /* cards sit side by side in one row; they wrap only if the screen is too narrow */
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 14px;
+}
+
+/* While results are showing, they replace the intro text */
+.hero.has-results .hero-content {
+    display: none;
+}
+
+.results[hidden] {
+    display: none;
+}
+
+.result-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.result-card img {
+    display: block;
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    background-color: #cfdde0;
+}
+
+.result-body {
+    padding: 12px 14px 14px;
+}
+
+.result-body h3 {
+    margin: 0 0 6px;
+    font-size: 17px;
+    color: #12323d;
+}
+
+.result-body p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.result-body .local-time {
+    margin-top: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #0d6862;
+}
+
+.no-results {
+    grid-column: 1 / -1;
+    margin: 0;
+    padding: 14px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #222;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 800px) {
+    .navbar {
+        flex-direction: column;
+    }
+
+    .hero {
+        padding-left: 70px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+    }
+}
